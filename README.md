@@ -70,4 +70,4 @@ Para ejecutar este proyecto en tu máquina local:
 *   *Nota: El sector "Comercio al por mayor y por menor" ha sido excluido deliberadamente para resaltar las interacciones entre sectores productivos directos.*
 
 ---
-Desarrollado con ❤️ para el análisis económico de Ecuador.
+Desarrollado con 🧠 para el análisis económico de Ecuador.
