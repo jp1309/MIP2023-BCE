@@ -1,51 +1,73 @@
 # Matriz Insumo-Producto 2023 (Ecuador)
 
-Este proyecto es una visualización interactiva de la **Matriz Insumo-Producto (MIP) 2023** del Ecuador, basada en datos del **Banco Central del Ecuador**.
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-La visualización permite explorar las interconexiones económicas entre diferentes sectores productivos, destacando los flujos monetarios significativos.
+Una visualización interactiva y dinámica de la **Matriz Insumo-Producto (MIP) 2023** del Ecuador, construida con datos oficiales del **Banco Central del Ecuador**.
 
-## 🚀 Despliegue
+Esta herramienta permite explorar las complejas interconexiones económicas entre los distintos sectores productivos del país, facilitando la identificación de clústeres y flujos monetarios clave.
 
-La visualización está disponible en vivo en:
-[https://jp1309.github.io/MIP2023/](https://jp1309.github.io/MIP2023/)
+---
+## 🚀 Demo en Vivo
 
-## 📊 Características de la Visualización
+Explora la visualización directamente en tu navegador:
+🔗 **[https://jp1309.github.io/MIP2023-BCE/](https://jp1309.github.io/MIP2023-BCE/)**
 
-*   **Nodos (Sectores Económicos)**:
-    *   **Tamaño**: Representa la cantidad de insumos *recibidos* por el sector.
-    *   **Color**: Representa la cantidad de insumos *enviados* a otros sectores.
-*   **Aristas (Enlaces)**:
-    *   Representan flujos económicos entre sectores.
-    *   Solo se muestran flujos superiores a **200 millones de dólares** para mantener la legibilidad.
-*   **Interactividad**:
-    *   Arrastre de nodos para reorganizar la red.
-    *   Zoom y desplazamiento.
-    *   Tooltips con información detallada al pasar el mouse sobre un nodo.
-    *   Panel de configuración física para ajustar la gravedad y la repulsión de los nodos.
+---
 
-## 🛠️ Tecnologías Utilizadas
+## 📊 Características Principales
 
-*   **[Vis.js Network](https://visjs.github.io/vis-network/)**: Para la renderización del grafo interactivo.
-*   **[Bootstrap 5](https://getbootstrap.com/)**: Para el diseño responsivo y componentes de interfaz.
-*   **HTML5 / CSS3 / JavaScript (ES6)**.
+*   **Visualización de Redes**: Uso de grafos dirigidos para mostrar relaciones insumo-producto.
+*   **Codificación Visual**:
+    *   **Tamaño del Nodo**: Proporcional a los insumos **recibidos** (Demanda).
+    *   **Color del Nodo**: Indica la intensidad de los insumos **enviados** (Oferta).
+*   **Filtrado Inteligente**: Para garantizar la claridad, se visualizan únicamente los flujos económicos superiores a **$200 millones USD**.
+*   **Interactividad Avanzada**:
+    *   Física de nodos ajustable en tiempo real (gravedad, repulsión).
+    *   Zoom y navegación fluida.
+    *   Detalles *on-hover* (tooltips) para cada sector.
+
+## 🛠️ Tecnologías
+
+Este proyecto ha sido desarrollado utilizando tecnologías web modernas y librerías de visualización de datos:
+
+*   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+*   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+*   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+*   **[Vis.js Network](https://visjs.github.io/vis-network/)**: Motor de renderizado de grafos.
+*   **[Bootstrap 5](https://getbootstrap.com/)**: Framework para diseño responsivo y componentes UI.
 
 ## 📁 Estructura del Proyecto
 
-El proyecto ha sido reestructurado para seguir mejores prácticas:
-
-```
-MIP2023/
+```bash
+MIP2023-BCE/
 ├── css/
-│   └── style.css       # Estilos personalizados
+│   └── style.css       # Estilos personalizados y ajustes de visualización
 ├── js/
-│   └── script.js       # Lógica de la visualización y datos
-├── index.html          # Punto de entrada principal
-└── README.md           # Documentación
+│   └── script.js       # Lógica de la red, configuración de nodos y datos
+├── index.html          # Interfaz principal
+└── README.md           # Documentación del proyecto
 ```
 
-## 📝 Fuente de Datos
+## 💻 Instalación y Uso Local
 
-Los datos provienen de las Cuentas Nacionales y la Matriz Insumo-Producto publicada por el **Banco Central del Ecuador (BCE)** para el año 2023.
+Para ejecutar este proyecto en tu máquina local:
+
+1.  **Clonar el repositorio**:
+    ```bash
+    git clone https://github.com/jp1309/MIP2023-BCE.git
+    ```
+2.  **Abrir el proyecto**:
+    Navega a la carpeta del proyecto y abre el archivo `index.html` en tu navegador web de preferencia (Chrome, Firefox, Edge, etc.).
+
+    *Opcional: Para una mejor experiencia, utiliza una extensión como "Live Server" en VS Code.*
+
+## 📝 Origen de los Datos
+
+*   **Fuente**: Cuentas Nacionales y Matriz Insumo-Producto (MIP).
+*   **Entidad**: Banco Central del Ecuador (BCE).
+*   **Periodo**: 2023.
+*   *Nota: El sector "Comercio al por mayor y por menor" ha sido excluido deliberadamente para resaltar las interacciones entre sectores productivos directos.*
 
 ---
-*Nota: Se excluye el sector "Comercio al por mayor y por menor" para focalizar el análisis en sectores productivos primarios y secundarios.*
+Desarrollado con ❤️ para el análisis económico de Ecuador.
